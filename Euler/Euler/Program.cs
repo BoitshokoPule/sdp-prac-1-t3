@@ -38,13 +38,14 @@ namespace Euler
             {
                 if (current % 2 == 0)
                 {
-                    sumOfEven += total;//add upp the even numbers
+                    sumOfEven += total;
                 }
                 total = prev + current;
                 prev = current;
                 current = total;
             }
             Console.WriteLine($"Problem 2: The total is: {sumOfEven}");
+
         }
     }
 }
