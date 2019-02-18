@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DE70B899-69E9-477D-9ED7-6B5CE14AC0AE}</ProjectGuid>
+    <ProjectGuid>{BE776383-D4E0-4A3E-9957-58976DB1C70A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Euler</RootNamespace>
     <AssemblyName>Euler</AssemblyName>

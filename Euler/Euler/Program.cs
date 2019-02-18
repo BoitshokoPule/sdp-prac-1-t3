@@ -10,10 +10,11 @@ namespace Euler
     {
         static void Main(string[] args)
         {
+
             //Problem 1: Find the sum of all the multiples of 3 or 5 below 1000.
             int i = 0; //Counter
             int sum = 0;
-            while (1 < 1000)
+            while (i < 1000)
             {
                 if (i % 3 == 0 || i % 5 == 0) //Checking if the current number is a multiple of 3 or 5
                 {
@@ -29,18 +30,21 @@ namespace Euler
             //1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 
             //By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
-            int prev = 0;
-            int current = 1;
-           
-            int total = 0;
-            while (current < 90)
+            int prev = 0;//keep previous term
+            int current = 1;//keep current term
+            int total = 0;// sum of prev and current
+            int sumOfEven = 0;//to keep 
+            while (current < 4000000)
             {
-                Console.WriteLine(current);
-                total= prev + current;
+                if (current % 2 == 0)
+                {
+                    sumOfEven += total;//add upp the even numbers
+                }
+                total = prev + current;
                 prev = current;
                 current = total;
             }
-
+            Console.WriteLine($"Problem 2: The total is: {sumOfEven}");
         }
     }
 }
