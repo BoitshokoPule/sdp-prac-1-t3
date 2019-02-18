@@ -10,7 +10,6 @@ namespace Euler
     {
         static bool CheckIfPrime(int a)
         {
-<<<<<<< HEAD
             int x = 2;
             int y = 0;
             if (a == 1 || a == 0)
@@ -30,7 +29,7 @@ namespace Euler
         }
         static void Main (string [] args)
         {
-           
+           //Problem 7
             double PrimePosition = 10001;
             int counter = 0;
             double j = 0;
@@ -47,7 +46,6 @@ namespace Euler
                 counter++;
             }
            Console.WriteLine($"The answer is: {counter}");
-=======
 
             //Problem 1: Find the sum of all the multiples of 3 or 5 below 1000.
             int i = 0; //Counter
@@ -83,8 +81,6 @@ namespace Euler
                 current = total;
             }
             Console.WriteLine($"Problem 2: The total is: {sumOfEven}");
-
->>>>>>> 8228ff49b55ee58f4a24e8d60616a215d30ff7fe
         }
 
     }
